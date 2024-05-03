@@ -82,6 +82,15 @@ p {
     width: auto;
     text-decoration: none;
     font-weight: 600;
+    transition-duration: 0.2s;
+    
+}
+.boton:hover {
+    background-color: #0E5850;
+    color: #BFE3DB;
+    
+
+    
 }
 .tab {
     background-color: #BFE3DB;
@@ -93,6 +102,7 @@ p {
     border: none;
     list-style: none;
 }
+
 
 /*--MARGENES--*/
 .margin-top {
@@ -168,13 +178,14 @@ header nav ul li a {
     text-decoration: none;
     color: #000E0E !important;
     align-items: center !important;
+    
+    
 }
 .nav-link:hover{
     color: #0E5850 !important;
+    
 }
-.nav-link:active{
-    color: #0E5850 !important;
-}
+
 main{
     max-width: 1180px;
     margin: auto;
@@ -210,6 +221,16 @@ main{
     padding: 16px;
     background-color:initial !important;
     border: 0px;
+       
+    
+}
+.card-contenedor .card img:hover {
+    cursor: pointer;
+    background-color: #0e585118;
+    transform: scale(1.05);
+    
+    
+    
 }
 .card h3{
     margin-top: 12px;
@@ -219,17 +240,67 @@ main{
     width: 100%;
     height: 264px;
     object-fit: cover;
+    transition-duration: 0.2s; 
+    
 }
 
 /*--BOTON WHATSAPP--*/
-.fixed img {
+/* .fixed img {
     width: 60px;
     height: 60px;
     position: fixed;
     bottom: 24px;
     right: 24px;
     z-index: 2;
+} */
+.div_btn_pal{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999999;
 }
+
+.btn_wht_escr{
+    background: #13a538;
+    border-radius: 60px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    bottom: 36px;
+    right: 36px;
+}
+@keyframes latidos {
+    0% { 
+        transform: none; 
+        opacity: 1;
+    }
+    100% { 
+        transform: scale(2.2); 
+        opacity: 0;
+    }
+}
+.palpitar {
+    display: inline-block;
+    font-size: 100px;
+    background: #13a538;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    animation: latidos .9s infinite;
+    transform-origin: center;
+    position: fixed;
+    z-index: 9;
+    bottom: 32px;
+    right: 32px;
+}
+
 
 /*--FOOTER--*/
 hr {
@@ -277,6 +348,7 @@ footer{
     vertical-align: text-top;
     display: flex;
     align-items: center;
+    transition: 0.2s;
 }
 .columna ul {
     list-style: none;

@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Especializado en el diseño de interfaz web/app y la experiencia de usuario en medios responsivos, touch o de escritorio con diferentes tipos de negocios, marcas o emprendimientos.">
+    <meta name="keywords"
+        content="diseño, diseño web, diseño de interfaz, Ui, Ux, Experiencia usuario, visual designer, diseñador web, webs profesionales, diseño responsive, diseño mobile, app, mobile, branding, foto de producto, landing, joelazo">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Joelazo - Visual Pro</title>
 </head>
 
@@ -52,10 +55,10 @@
     <main>
         <!--PROYECTOS-->
         <section class="margin-top">
-            <h1 class="margin-40">Proyectos.</h1>
+            <h1 class="margin-40 animate__animated animate__fadeInUp">Proyectos.</h1>
         </section>
         <!--TABD-->
-        <section class="tab-contenedor">
+        <section class="tab-contenedor animate__animated animate__fadeInUp">
             <ul class="margin-40">
                 <li class="tab">Todos</li>
                 <li>Web</li>
@@ -65,7 +68,7 @@
             </ul>
         </section>
         <!--PORTAFOLIO - CARD -->
-        <section>
+        <section class="animate__animated animate__fadeInUp">
             <div class="card-contenedor">
                 <div class="card">
                     <img src="./img/porta-caja-arequipa.jpg" alt="Caja arequipa">
@@ -97,14 +100,20 @@
                     <h3>Avene</h3>
                     <p>Branding</p>
                 </div>
+                <a class="boton" href=#>Ver más</a>
 
             </div>
         </section>
     </main>
-    <div class="fixed">
-        <img src="./img/icon-ws.svg" alt="">
+    <!--Boton WhatsApp-->
+    <div class="div_btn_pal">
+        <div class="palpitar"></div>
+        <a class="btn_wht_escr"
+            href="https://api.whatsapp.com/send?phone=51945917373&text=Hola,%20necesito%20informaci%C3%B3n "
+            target="_blank">
+            <img src="./img/icon-ws.svg" alt="">
+            </a>
     </div>
-
     <!--FOOTER-->
     <hr>
 
@@ -184,6 +193,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
 
 </body>
 
